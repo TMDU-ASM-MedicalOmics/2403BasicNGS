@@ -1,0 +1,13 @@
+Project_ID	cell_type	treatment_type	treatment_time	data_type	data_info	RNAseq_type
+PRJNA470733	MDM	IFN	10	RNAseq	SRR7161144	single
+PRJNA470733	MDM	IFN	10	RNAseq	SRR7161229	single
+PRJNA470733	MDM	IFN	10	RNAseq	SRR7161174	single
+PRJNA470733	MDM	IFN	10	RNAseq	SRR7161244	single
+PRJNA470733	MDM	Mock	10	RNAseq	SRR7161172	single
+PRJNA470733	MDM	Mock	10	RNAseq	SRR7161206	single
+PRJEB21332	dermal_fibroblast	Mock	24	RNAseq	ERR2012469	single
+PRJEB21332	dermal_fibroblast	Mock	24	RNAseq	ERR2012470	single
+PRJEB21332	dermal_fibroblast	Mock	24	RNAseq	ERR2012471	single
+PRJEB21332	dermal_fibroblast	IFN	24	RNAseq	ERR2012472	single
+PRJEB21332	dermal_fibroblast	IFN	24	RNAseq	ERR2012473	single
+PRJEB21332	dermal_fibroblast	IFN	24	RNAseq	ERR2012474	single
