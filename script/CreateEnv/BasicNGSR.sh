@@ -4,16 +4,17 @@
 #$ -cwd
 #$ -q '!mjobs_rerun.q'
 #$ -j y
-#$ -N BasicNGS
+#$ -N BasicNGSR
 #$ -o log/CreateEnv/
 
 echo start
 date
 
 . ~/miniconda3/etc/profile.d/conda.sh
-conda create -y -n BasicNGS
-conda activate BasicNGS
-conda install -y -c bioconda sra-tools fastp star subread
+conda create -y -n BasicNGSR
+conda activate BasicNGSR
+conda install -y -c conda-forge r-tidyverse
+#conda install -y -c bioconda bioconductor-deseq2 bioconductor-apeglm
 
 echo end
 date
