@@ -14,6 +14,7 @@ date
 conda create -y -n BasicNGS
 conda activate BasicNGS
 conda install -y -c bioconda sra-tools fastp star subread
+conda install -y -c bioconda gtfparse biopython
 
 echo end
 date
