@@ -20,7 +20,7 @@ fasta=../../genome/Homo_sapiens/Homo_sapiens.fa
 gtf=../../genome/Homo_sapiens/Homo_sapiens.gtf
 
 ${CellRanger}/cellranger mkref \
---genome=Homo_sapines \
+--genome=Homo_sapiens \
 --fasta=${fasta} \
 --genes=${gtf} \
 --nthreads=15 \
