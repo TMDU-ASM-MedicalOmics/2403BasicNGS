@@ -21,10 +21,5 @@ fastq-dump \
 -O ../output/scRNAseq/fastq/${SRRID}/ \
 ../output/scRNAseq/sra/${SRRID}/${SRRID}.sra
 
-#SRRname=`ls ../output/scRNAseq/fastq/${SRRID}* | sed -e 's/\.sra//g'`
-#if [ ! -f ${SRRname} ]; then
-#    mv ../output/scRNAseq/fastq/${SRRID}.sra.fastq ../output/scRNAseq/fastq/${SRRID}.fastq
-#fi
-
 echo finish
 date
