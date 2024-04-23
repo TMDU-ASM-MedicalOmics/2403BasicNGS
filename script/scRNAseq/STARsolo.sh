@@ -18,18 +18,17 @@ DataID=`echo Hs_HSV1 Hs_Mock | cut -d " " -f ${SGE_TASK_ID}`
 
 mkdir -p ../output/scRNAseq/STARsolo/${DataID}
 cd ../output/scRNAseq/STARsolo/${DataID}
-file1=../fastq/${SRRID}/${DataID}_S1_*_R1_001.fastq.gz
-file2=../fastq/${SRRID}/${DataID}_S1_*_R2_001.fastq.gz
+file1=../../fastq/${SRRID}/${DataID}_S1_*_R1_001.fastq.gz
+file2=../../fastq/${SRRID}/${DataID}_S1_*_R2_001.fastq.gz
 CellRanger=~/local/src/cellranger-7.2.0
-index=../../STARIndex
+index=../../../STARIndex
 
 STAR --runThreadN 20 \
 --genomeDir ${index} \
 --genomeSAsparseD 3 \
 --readFilesIn ${file2} ${file1} \
 --readFilesCommand gunzip -c \
---clipAdapterType CellRanger4 \
---runMode soloCellFiltering \
+--runMode alignReads \
 --outFileNamePrefix ./ \
 --outFilterScoreMin 30 \
 --outSAMtype BAM SortedByCoordinate \
