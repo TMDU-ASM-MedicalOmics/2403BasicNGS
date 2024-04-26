@@ -15,6 +15,6 @@ conda create -y -n BasicNGS
 conda activate BasicNGS
 conda install -y -c bioconda sra-tools fastp star subread
 conda install -y -c bioconda gtfparse biopython
-
+conda install -y -c bioconda bioconductor-glmgampoi
 echo end
 date

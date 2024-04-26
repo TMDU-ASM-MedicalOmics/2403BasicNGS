@@ -14,6 +14,7 @@ date
 conda create -y -n BasicNGSR
 conda activate BasicNGSR
 conda install -y -c conda-forge r-tidyverse
+conda install -y -c conda-forge r-seurat r-hdf5r
 #conda install -y -c bioconda bioconductor-deseq2 bioconductor-apeglm
 
 echo end
