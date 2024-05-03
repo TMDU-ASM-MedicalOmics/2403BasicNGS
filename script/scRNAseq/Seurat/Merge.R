@@ -17,7 +17,7 @@ Seurat.s <- SplitObject(Seurat,split.by = "orig.ident")
 for (i in 1:length(Seurat.s))  Seurat.s[[i]] <- SCTransform(Seurat.s[[i]],verbose=F)
 Seurat.features <- SelectIntegrationFeatures(object.list = Seurat.s, nfeatures = 2000)
 Seurat.s <- PrepSCTIntegration(object.list = Seurat.s, anchor.features = Seurat.features)
-reference_dataset <- which(names(Seurat.s) == "HS_Mock")
+reference_dataset <- which(names(Seurat.s) == "Hs_Mock")
 combined <- FindIntegrationAnchors(Seurat.s, normalization.method = "SCT", 
     anchor.features = Seurat.features, reference = reference_dataset,verbose=F)
 combined <- IntegrateData(combined, normalization.method = "SCT",verbose=F)
